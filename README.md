@@ -1,4 +1,4 @@
-# <h1 align = "center"> Saint Hairon © Salon
+# <h1 align = "center"> Star-on | Star-off Factory
 
 ![Preview]()
 
@@ -8,7 +8,9 @@
 
 ## Description
 
-This application is a MVC web application to help Hairon manage their stylists and their clients. Hairon should be able to add a list of stylists working at the salon, and for each stylist, add clients who see that stylist. The stylists have specific specialties, so each client can only see (belong to) a single stylist.
+This factory application is greatly inspired by the Dr.Seuss story "The Sneetches".
+
+This Factory application will help Sylvester McMonkey McBean to keep track of his machine repairs. This MVC web application will help McBean manage their engineers, and the machines they are licensed to fix. McBean will be able to add a list of engineers, a list of machines, and specify which engineers are licensed to repair which machines. This application will create a many-to-many relationship between Engineers and Machines. An engineer can be licensed to repair (belong to) many machines (such as the Star-On, the Star-Off) and a machine can have many engineers (Mr.Lima Bean, Ms.Green Beans, Mrs.Red Beans) licensed to repair it.
 
 ## Specifications
 
