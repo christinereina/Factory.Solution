@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Registrar.Models;
+using Factory.Models;
 using System.Collections.Generic;
 
-namespace Registrar.Controllers
+namespace Factory.Controllers
 {
   public class HomeController : Controller
   {

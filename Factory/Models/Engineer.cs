@@ -13,6 +13,6 @@ namespace Factory.Models
     public string EngineerName { get; set; }
     public string EngineerSkill { get; set; }
     public DateTime HireDate { get; set; }
-    public ICollection<EngineerMachine> Machine { get; set; }
+    public ICollection<EngineerMachine> Machines { get; set; }
   }
 }
