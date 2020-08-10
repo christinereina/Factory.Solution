@@ -2,7 +2,7 @@
 
 <img align = "center">
 
-![Preview](./Factory/wwwroot/img/welcome.png)
+![Preview](./Factory/wwwroot/img/machine.png)
 
 
 <h4 align = "center"> *The Sneetches got really quite smart on that day,
