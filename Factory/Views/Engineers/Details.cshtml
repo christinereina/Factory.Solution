@@ -1,0 +1,18 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Engineer
+
+<h1>Engineer Details</h1>
+<hr/>
+
+<h2>Engineer Name: @Html.DisplayFor(model => model.EngineerName)</h2>
+<h3>Engineer Id: @Html.DisplayFor(model => model.EngineerId)</h3>
+<h3>Skill Level: @Html.DisplayFor(model => model.EngineerSkill)</h3><br>
+<h3>Hire Date: @Html.DisplayFor(model => model.HireDate, new { @type = "date"})</h3>
+
+<p>@Html.ActionLink("Edit", "Edit", new { id = @Model.EngineerId })</p>
+<p>@Html.ActionLink("Back to Engineers", "Index")</p>
+<p>@Html.ActionLink("All Machines", "Index", "Machines")</p>
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
