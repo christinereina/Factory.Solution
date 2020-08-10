@@ -1,5 +1,7 @@
 # <h1 align = "center"> Star-on | Star-off Factory
 
+<img align = "center">
+
 ![Preview](./Factory/wwwroot/img/welcome.png)
 
 ##### <h4 align = "center">  Many-to-Many Relationships, Indepedent Project for Epicodus, 08.7.2020
@@ -11,13 +13,6 @@
 This factory application is greatly inspired by the Dr.Seuss story "The Sneetches".
 
 This Factory application will help Sylvester McMonkey McBean to keep track of his machine repairs. This MVC web application will help McBean manage their engineers, and the machines they are licensed to fix. McBean will be able to add a list of engineers, a list of machines, and specify which engineers are licensed to repair which machines. This application will create a many-to-many relationship between Engineers and Machines. An engineer can be licensed to repair (belong to) many machines (such as the Star-On, the Star-Off) and a machine can have many engineers (Mr.Lima Bean, Ms.Green Beans, Mrs.Red Beans) licensed to repair it.
-
-## Specifications
-
-User is greeted with a splash Welcome page. 
-
-| Behavior   |   Input   |  Output | 
-|----------|:-------------:|------:|
 
 ## Setup/Installation Requirements 
 
@@ -87,8 +82,16 @@ CREATE TABLE `Machines` (
 ```
 3. Once it connects, you should be all set!
 
-[see detailed instructions for windows/mac](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql) 
+<h5 align = "right">
 
+[see more detailed instructions for windows/mac](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql) 
+
+## Specifications
+
+User is greeted with a splash Welcome page. 
+
+| Behavior   |   Input   |  Output | 
+|----------|:-------------:|------:|
 
 ## Known Bugs
 
