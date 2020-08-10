@@ -2,22 +2,17 @@
   Layout = "_Layout";
 }
 
-@model Factory.Models.Engineer;
+@model Factory.Models.Engineer
 
-<h1>Add an Engineer</h1>
+<h1>@Html.DisplayFor(model => model.EngineerName)</h1>
+
+<h2>Are you sure you want to delete this Engineer?</h2>
 
 @using (Html.BeginForm())
 {
-  @Html.Label("EngineerName", "Engineer Name")<br>
-  @Html.TextBoxFor(model => model.EngineerName)<br>
-
-  @Html.Label("EngineerSkill", "Skill")<br>
-  @Html.TextBoxFor(model => model.EngineerSkill)<br>
-
-  @Html.Label("HireDate", "HireDate")<br>
-  @Html.TextBoxFor(model => model.HireDate, new { @type = "date"})<br>
-
-  <input type="submit" value="Add new Engineer" /><br>
+    <input type="submit" value="Delete" />
 }
 
-<p>@Html.ActionLink("Show all Engineers", "Index")</p>
+<p>@Html.ActionLink("Back to Engineers", "Index")</p>
+<p>@Html.ActionLink("All Machines", "Index", "Machines")</p>
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
