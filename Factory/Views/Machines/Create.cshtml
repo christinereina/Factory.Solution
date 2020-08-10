@@ -16,13 +16,10 @@
   @Html.TextBoxFor(model => model.Number) <br>
 
   @Html.LabelFor(model => model.Description) <br>
-  @Html.TextBoxFor(model => model.Description) <br><br>
+  @Html.TextBoxFor(model => model.Description) <br>
 
-  @Html.Label("Select Engineer")
-  @Html.DropDownList("EngineerId")
+  @Html.Label("Select Engineer")<br>
+  @Html.DropDownList("EngineerId")<br><br>
 
-  <input type="submit" value="Add Machine" /><br>
+  <input type="submit" class="btn btn-warning" value="Add Machine" /><br>
 }
-
-<p>@Html.ActionLink("Show all machines", "Index")</p>
-<p>@Html.ActionLink("Home", "Index", "Home")</p>

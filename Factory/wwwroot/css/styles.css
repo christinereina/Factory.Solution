@@ -1,20 +1,17 @@
 h1 {
   font-family: 'Fredoka One', cursive;
-  font-size: 80px;
+  font-size: 100px;
   text-align: center;
-  color: aliceblue;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: lightblue;
-}
-
-.container {
+  color: lightgreen;
   text-align: center;
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .btn {
-  font-size: 25px;
+  font-size: 28px;
+  font-weight: bold;
 }

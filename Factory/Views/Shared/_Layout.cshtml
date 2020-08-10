@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body>
+    <button type="button" class="btn btn-warning">@Html.ActionLink("Home", "Index", "Home")</button> 
+    <button type="button" class="btn btn-warning">@Html.ActionLink("Engineers", "Index")</button>
+    <button type="button" class="btn btn-warning">@Html.ActionLink("Machines", "Index", "Machines")</button> 
     <div class="container">
       @RenderBody()
     </div>

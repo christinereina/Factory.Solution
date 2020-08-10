@@ -19,8 +19,7 @@
   @Html.LabelFor(model => model.Description) <br>
   @Html.EditorFor(model => model.Description) <br><br>
 
-  <input type="submit" value="Save" />
+  <input type="submit" class="btn btn-warning" value="Save" />
 }
 
-<p>@Html.ActionLink("Back to Machines", "Index")</p>
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
+<button type="button" class="btn btn-warning">@Html.ActionLink("Back to Machines", "Index")</button> 

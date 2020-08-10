@@ -12,8 +12,5 @@
 <h3>Skill Level: @Html.DisplayFor(model => model.EngineerSkill)</h3>
 <h3>Hire Date: @Html.DisplayFor(model => model.HireDate, new { @type = "date"})</h3>
 
-<p>@Html.ActionLink("Edit", "Edit", new { id = @Model.EngineerId })</p>
-<p>@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.EngineerId })</p>
-<p>@Html.ActionLink("Back to Engineers", "Index")</p>
-<p>@Html.ActionLink("All Machines", "Index", "Machines")</p>
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
+<button type="button" class="btn btn-warning">@Html.ActionLink("Edit", "Edit", new { id = @Model.EngineerId })</button>
+<button type="button" class="btn btn-warning">@Html.ActionLink("Delete", "Delete", new { id = Model.EngineerId })</button>

@@ -4,7 +4,7 @@
 
 @model Factory.Models.Engineer
 
-<h1>Add an Engineer</h1>
+<h1>New Engineer</h1>
 <img src="~/img/pointing.png">
 
 @using (Html.BeginForm())
@@ -15,10 +15,8 @@
   @Html.Label("EngineerSkill", "Skill")<br>
   @Html.TextBoxFor(model => model.EngineerSkill)<br>
 
-  @Html.Label("HireDate", "HireDate")<br>
-  @Html.TextBoxFor(model => model.HireDate, new { @type = "date"})<br>
+  @Html.Label("HireDate", "Hire Date")<br>
+  @Html.TextBoxFor(model => model.HireDate, new { @type = "date"})<br><br>
 
-  <input type="submit" value="Add new Engineer" /><br>
+  <input type="submit" class="btn btn-success" value="Add new Engineer" />
 }
-
-<p>@Html.ActionLink("Show all Engineers", "Index")</p>
