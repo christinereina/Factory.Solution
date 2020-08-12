@@ -1,15 +1,14 @@
-# <h1 align = "center"> Star-on | Star-off Factory
+# <h1 align = "center"> Staron / Staroff Industries
 
 <img align = "center">
 
 ![Preview](./Factory/wwwroot/img/machine.png)
 
+<h5 align = "center"> The Sneetches got really quite smart on that day,
 
-<h4 align = "center"> *The Sneetches got really quite smart on that day,
+The day they decided that Sneetches are Sneetches*
 
-*The day they decided that Sneetches are Sneetches*
-
-*And no kind of Sneetch is the best of the beaches.*
+*And no kind of Sneetch is the best of the beaches.
 
 ##### <h4 align = "center">  Many-to-Many Relationships, Indepedent Project for Epicodus, 08.7.2020
 
