@@ -35,7 +35,7 @@ Run the following commands in your Terminal:
 ```
 cd desktop
 git clone https://github.com/christinereina/Factory.Solution
-cd Wonka.Solution
+cd Factory.Solution
 ```
 ### 3. Install the necessary dependencies to build the project
 Run the following commands in your Terminal:
