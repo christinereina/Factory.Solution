@@ -1,18 +1,17 @@
 # <h1 align = "center"> Staron / Staroff Industries
 
-<img align = "center">
+<h4 align = "center">  Many-to-Many Relationships, Indepedent Project for Epicodus, 08.7.2020
 
-![Preview](./Factory/wwwroot/img/machine.png)
+ ![Preview](./Factory/wwwroot/img/machine.png)
+
 
 <h5 align = "center"> The Sneetches got really quite smart on that day,
 
-The day they decided that Sneetches are Sneetches*
+<h5 align = "center">  The day they decided that Sneetches are Sneetches
 
-*And no kind of Sneetch is the best of the beaches.
+<h5 align = "center"> And no kind of Sneetch is the best of the beaches.
 
-##### <h4 align = "center">  Many-to-Many Relationships, Indepedent Project for Epicodus, 08.7.2020
-
-#### <h4 align = "center"> By _**Christine Augustine**_
+# <h4 align = "center"> By Christine Augustine
 
 ## Description
 
@@ -22,82 +21,51 @@ This Factory application will help Sylvester McMonkey McBean to keep track of hi
 
 ## Setup/Installation Requirements 
 
-1. Clone this [repository](https://github.com/christinereina/Factory.Solution) from GitHub
-2. Open the downloaded directory in a text editor of your choice. (VSCode, Atom, etc.)
-3. Once you have the directory open, navigate to the top level of the directory and create a `appsettings.json` file which contains:
+### 1. Install .NET Core 
+
+Download .NET Core SDK from Microsoft Corp  (**[macOS](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.2.106-macos-x64-installer) | [Windows OS](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.2.203-windows-x64-installer)**)
+
+### Install dotnet script
+
+Enter the command `dotnet tool install -g dotnet-script` in Terminal 
+
+### 2. Clone this [repository](https://github.com/christinereina/Factory.Solution) from GitHub
+
+Run the following commands in your Terminal:
 ```
-{
-  "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=christine_augustine;uid=root;pwd=epicodus;"
-  }
-}
+cd desktop
+git clone https://github.com/christinereina/Factory.Solution
+cd Wonka.Solution
 ```
-4. Then, install the REPL dotnet script, run dotnet tool `install -g dotnet-script` in your terminal.
-5. To install the necessary dependencies, run the following commands:
+### 3. Install the necessary dependencies to build the project
+Run the following commands in your Terminal:
 ```
 dotnet restore
 dotnet build
 dotnet run
 ```
-### Installing and Configuring MySQL
-
-1. Start by downloading the MySQL Community Server .dmg file [HERE](https://dev.mysql.com/downloads/file/?id=484914). Click the download icon. Use the *No thanks, just start my download link*.
-2. Follow along with the Install, once on the configuation make sure you:
-- Use Legacy Password Encryption.
-- Set a unique password
-3. Once finished, open your terminal and enter the command echo `export PATH="/usr/local/mysql/bin:$PATH"' >> ~/.bash_profile`. This will save this path in .bash_profile, which is where our terminal is configured.
-4. Next, download the MySQL Workbench .dmg file [HERE](https://dev.mysql.com/downloads/file/?id=484391). Again, use the *No thanks, just start my download link*.
-5.Install MySQL Workbench to Applications folder.
-
-### Recreating the Local Database
-
-1. Open **MySQL Workbench**, select Local 3306 and enter your password
-2. Use this query selection to create the database:
+### 4. Create the database and project tables
+Run the following commands in your Terminal:
 ```
-CREATE DATABASE `christine_augustine`; 
+dotnet ef migrations add Initial
+dotnet ef database update
+```
+### 5. Starting the Server
 
-USE `christine_augustine`;
+Initialize a local server to run the project in your browser
 
-CREATE TABLE `EngineerMachine` (
-  `EngineerMachineId` int(11) NOT NULL AUTO_INCREMENT,
-  `EngineerId` int(11) NOT NULL,
-  `MachineId` int(11) NOT NULL,
-  PRIMARY KEY (`EngineerMachineId`),
-  KEY `IX_EngineerMachine_EngineerId` (`EngineerId`),
-  KEY `IX_EngineerMachine_MachineId` (`MachineId`),
-  CONSTRAINT `FK_EngineerMachine_Engineers_EngineerId` FOREIGN KEY (`EngineerId`) REFERENCES `engineers` (`EngineerId`) ON DELETE CASCADE,
-  CONSTRAINT `FK_EngineerMachine_Machines_MachineId` FOREIGN KEY (`MachineId`) REFERENCES `machines` (`MachineId`) ON DELETE CASCADE
-);
+Run the following command in your Terminal:
+```
+dotnet watch run
+```
 
-CREATE TABLE `Engineers` (
-  `EngineerId` int(11) NOT NULL AUTO_INCREMENT,
-  `EngineerName` longtext,
-  `EngineerSkill` longtext,
-  `HireDate` datetime(6) NOT NULL,
-  PRIMARY KEY (`EngineerId`)
-);
+If you are running the script locally, it will open the project in your browser window and shift the focus from the terminal to the browser. 
 
-CREATE TABLE `Machines` (
-  `MachineId` int(11) NOT NULL AUTO_INCREMENT,
-  `Name` longtext,
-  `Number` int(11) NOT NULL,
-  `Description` longtext,
-  PRIMARY KEY (`MachineId`)
-);
+If not, you can copy and paste this address into your browser to view:
 
 ```
-3. Once it connects, you should be all set!
-
-<h5 align = "right">
-
-[see more detailed instructions for windows/mac](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql) 
-
-<!-- ## Specifications
-
-User is greeted with a splash Welcome page. 
-
-| Behavior   |   Input   |  Output | 
-|----------|:-------------:|------:| -->
+http://127.0.0.1:5000
+```
 
 ## Known Bugs
 
@@ -121,6 +89,6 @@ _Please feel free to contact the author through GitHub **[christinereina](https:
 
 ### License
 
-*This site is licensed under the MIT license.*
+[MIT](https://mit-license.org/)
 
 Copyright (c) 2020 **Christine Augustine**
